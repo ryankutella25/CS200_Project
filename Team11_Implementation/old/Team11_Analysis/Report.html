@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Title is just what the tab is named when it's open in browser -->
+    <title>Project 2 Report</title>
+  </head>
+
+  <!-- Everything goes in the body -->
+  <body>
+
+    <!-- h1 stands for the biggest header (h6 would be smallest header) -->
+    <h2>Project 2 Report</h2>
+
+    <table>
+      <!-- tr stands for table row -->
+      <tr>
+        <!-- th stands for table header cell -->
+        <th>Student Name</th>
+        <th>Student Email</th>
+        <th>CWID</th>
+        <th>Hours</th>
+      </tr>
+      <tr>
+        <!-- td stands for table data cell -->
+        <td>Adison</td>
+        <td>anviars@crimson.ua.edu</td>
+        <td>12229315</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Ali Burkemper</td>
+        <td>aeburkemper@crimson.ua.edu</td>
+        <td>12220226</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Jack Bentley</td>
+        <td>jhbentleylester@crimson.ua.edu</td>
+        <td>12165997</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Jack Sherry</td>
+        <td>jgsherry@crimson.ua.edu</td>
+        <td>12141673</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Luca (Submitter)</td>
+        <td>ldjontz@crimson.ua.edu</td>
+        <td>12265979</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Ryan Kutella</td>
+        <td>rfkutella@crimson.ua.edu</td>
+        <td>12192400</td>
+        <td>10</td>
+      </tr>
+    </table>
+
+    <h2>Task Distribution</h2>
+
+    <table>
+      <tr>
+        <th>Student Name</th>
+        <th>Tasks</th>
+        <th>Percent Contributed</th>
+      </tr>
+      <tr>
+        <td>Adison</td>
+        <td>Short Paragraph, Group Diagrams, and some Use Case Activity Diagrams</td>
+        <td>16.67</td>
+      </tr>
+      <tr>
+        <td>Ali Burkemper</td>
+        <td>Building short paragraph, working with rest of team to create activity and stereotype diagram. Created bill for services
+          and generate report activity diagram.</td>
+        <td>16.67</td>
+      </tr>
+      <tr>
+        <td>Jack Bentley</td>
+        <td>Group Diagrams and some Use Case Activity Diagrams</td>
+        <td>16.67</td>
+      </tr>
+      <tr>
+        <td>Jack Sherry</td>
+        <td>Group Diagrams and some Use Case Activity Diagrams</td>
+        <td>16.67</td>
+      </tr>
+      <tr>
+        <td>Luca</td>
+        <td>Group Diagrams and some Use Case Activity Diagrams</td>
+        <td>16.67</td>
+      </tr>
+      <tr>
+        <td>Ryan</td>
+        <td>Group Diagrams and some Use Case Activity Diagrams</td>
+        <td>16.67</td>
+      </tr>
+    </table>
+
+    <h2>Bitbucket Stats</h2>
+
+    <!-- img stands for image -->
+    <img src="BitbucketStats.png"/>
+
+    <h2>Short Paragraph</h2>
+
+    <!-- &emsp is just 4 spaced -->
+    <p>
+      The files and member/provider records will be computerized. The hardware required will be a computer for the provider, manager, and operators, 
+      as well as data servers to store our data. The ChocAn system can receive and send data from the provider terminal. The system writes EFT data 
+      to a disk that banking computers can access. Acme has access to and can update the membership records. The provider, operator, and manager 
+      access the system through their own terminals. The operators run exclusively in interactive mode. The data is stored on the ChocAn system disk 
+      in individual files.
+    </p>
+
+    <h2>Activity Diagram</h2>
+
+    <img src="UpdatedActivityDiagram.png"/>
+
+    <h2>Stereotype Diagram</h2>
+
+    <img src="MainStereotype.png"/>
+
+    <h2>Activity Diagrams for Use Cases</h2>
+
+
+    <div class="activity">
+    <div class="activityCard">
+      <h3>Bill ChocAn</h2>
+      <img src="bill2.png"/>
+    </div>
+    
+    <div class="activityCard">
+      <h3>Request Report</h2>
+      <img src="requestreport2.png" style="width: 50%;"/>
+    </div>
+    
+    <div class="activityCard">
+      <h3>Verify Member</h2>
+      <img src="Verify Member AD.png"/>
+    </div>
+    
+    <div class="activityCard">
+      <h3>Request Provider Directory</h2>
+      <img src="Provider Directory AD.png"/>
+    </div>
+
+    <div class="activityCard">
+      <h3>Manage Member Records</h2>
+        <img src="ManageMember.png"/>
+    </div>
+    
+    <div class="activityCard">
+      <h3>Manage Provider Records</h2>
+      <img src="ManageProvider.png"/>
+    </div>
+
+    <div class="activityCard">
+      <h3>Verify Provider</h2>
+        <img src="verifyprovider.png"/>
+    </div>
+    
+    <div class="activityCard">
+      <h3>Verify Operator</h2>
+      <img src="verifyoperator.png"/>
+    </div>
+
+
+    <div class="activityCard">
+      <h3>Verify Manager</h2>
+      <img src="verifymanager.png"/>
+    </div> 
+
+    <div class="activityCard">
+      <h3>Run Accounting Procedure</h2>
+      <img src="Accounting_Procedure_AD.png"/>
+    </div>
+
+    <!-- Add other activity diagrams here -->
+
+  </div>
+
+    <!-- style holds the CSS and just styles elements -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: #ddd; */
+      }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+      }
+
+      td,th {
+        border: 1px solid #222;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #bbb;
+      }
+      tr:first-child {
+        background-color: #777;
+        color: #ddd;
+      }
+
+      p{
+        margin-block: 2px;
+        width: 70%;
+        font-size: 18px;
+        line-height: 1.75;
+      }
+
+      pre{
+        font-size: 18px;
+        line-height: 1.5;
+        width: 90%;
+        white-space: pre-wrap;
+      }
+
+      h2{
+        margin-block-start: 40px;
+        margin-block-end: 10px;
+      }
+
+      img{
+        width: 70%;
+        height: auto;
+      }
+
+      .activity img{
+        width: 100%;
+        height: auto;
+        margin-inline: auto;
+      }
+
+      .activity{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .activityCard{
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
+        padding: 10px;
+        margin-block: 40px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .activity h3{
+        text-align: center;
+      }
+    </style>
+
+  </body>
+</html>

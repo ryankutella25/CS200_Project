@@ -1,0 +1,21 @@
+Provider name: Real Prov
+Provider number: 2
+Provider street adress: 10 Road
+Provider city: Birm
+Provider state: Alabama
+Provider zip: 0
+
+Date of Service: 12-12-2000
+Service Recieved on Date: 11-29-2023
+Member name and number: Fake Guy 1
+Service code: 598470
+Fee: 50
+
+Date of Service: 12-12-2000
+Service Recieved on Date: 11-29-2023
+Member name and number: Fake Girl 2
+Service code: 883948
+Fee: 150
+
+Number of consultations: 2
+Total fee for the week: 150
