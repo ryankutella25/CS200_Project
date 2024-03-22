@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<project name="Team11_Implementation" default="all" basedir="..">
+  <property name="src"   value="CS200_Project/Team11_Implementation/src"/>
+  <property name="release" value="CS200_Project/Team11_Implementation/release"/>
+  <property name="lib"   value="CS200_Project/Team11_Implementation/lib"/>
+  <property name="build"   value="CS200_Project/Team11_Implementation/build"/>
+
+<target name="all" depends="clean, compile, jar, cleanup, run" description="Builds the whole project">
+
+</target>
+
+<target name="clean" description="Removes previous build">
+    <delete verbose="true">
+      <fileset dir="${release}"/>
+    </delete>
+  </target>
+
+<target name="compile" description="compile whole project and put in new build folder">
+    <mkdir dir="${build}" />
+    <javac srcdir="${src}" destdir="${build}">
+      <classpath>
+        <fileset dir="${lib}">
+            <include name="**.jar" />
+        </fileset>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile">
+    <manifest file = "${build}/MANIFEST.MF" >
+        <attribute name = "Main-Class" value = "App"/>
+        <attribute name = "Class-Path" value = "${build}/test.jar"/>
+    </manifest>
+    <jar jarfile="${release}/RunChocAn.jar" manifest="${build}/MANIFEST.MF" basedir="${build}"/>
+  </target>
+
+  <target name="cleanup" description="remove build folder">
+    <delete dir="${build}"/>
+  </target>
+
+  <target name="run">
+        <java jar="${release}/RunChocAn.jar" fork="true"/>
+    </target>
+</project>
